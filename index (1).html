@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ea7d7fe526feb406c9ae7cab5e538788 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ea7d7fe526feb406c9ae7cab5e538788" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ea7d7fe526feb406c9ae7cab5e538788 = L.map(
+                "map_ea7d7fe526feb406c9ae7cab5e538788",
+                {
+                    center: [38.37601833333333, -101.009144375],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c71647da2bcbf42fc3420eee2937ac20 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ea7d7fe526feb406c9ae7cab5e538788);
+        
+    
+            var marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b = L.markerClusterGroup(
+                {}
+            );
+            map_ea7d7fe526feb406c9ae7cab5e538788.addLayer(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var marker_5e140f37a57433b74f17643877c086d7 = L.marker(
+                [38.637112, -121.469999],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_5bc7f1824d3ff558b0946aca33c66b27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5e140f37a57433b74f17643877c086d7.setIcon(icon_5bc7f1824d3ff558b0946aca33c66b27);
+        
+    
+        var popup_546f554c49a83810f69a53f2aab4cd65 = L.popup({"maxWidth": 350});
+
+        
+            var html_b620c3b46c1fce6d5fcf2daf62f157de = $(`<div id="html_b620c3b46c1fce6d5fcf2daf62f157de" style="width: 100.0%; height: 100.0%;"><b>Valley Vista</b><br>Builder: Keudeser<br>Status: Active<br>Address: 35 Oak Manor, Sacramento, CA 95838<br>Units: 9.0 / 121.0<br>Sales Contact: Dillon Schuh<br><a href='https://nextnewhomes.com/valley-vista/' target='_blank'>Website</a></div>`)[0];
+            popup_546f554c49a83810f69a53f2aab4cd65.setContent(html_b620c3b46c1fce6d5fcf2daf62f157de);
+        
+
+        marker_5e140f37a57433b74f17643877c086d7.bindPopup(popup_546f554c49a83810f69a53f2aab4cd65)
+        ;
+
+        
+    
+    
+            marker_5e140f37a57433b74f17643877c086d7.bindTooltip(
+                `<div>
+                     Valley Vista
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_815ed95d4fa0d15ce30e218bc45bfc16 = L.marker(
+                [38.790861, -121.225684],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_3f02fc175003e81c157a70246841b0da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_815ed95d4fa0d15ce30e218bc45bfc16.setIcon(icon_3f02fc175003e81c157a70246841b0da);
+        
+    
+        var popup_5e6d0aff0d985489acd2afb7fc879b5c = L.popup({"maxWidth": 350});
+
+        
+            var html_567ece2ae8743e2319c75b4642f9a53a = $(`<div id="html_567ece2ae8743e2319c75b4642f9a53a" style="width: 100.0%; height: 100.0%;"><b>Granite Terrace</b><br>Builder: Keudeser<br>Status: Active<br>Address: 4379 Robinson Rd, Rocklin, CA 95765<br>Units: 9.0 / 27.0<br>Sales Contact: Mallory<br><a href='https://nextnewhomes.com/granite-terrace/#residence-one' target='_blank'>Website</a></div>`)[0];
+            popup_5e6d0aff0d985489acd2afb7fc879b5c.setContent(html_567ece2ae8743e2319c75b4642f9a53a);
+        
+
+        marker_815ed95d4fa0d15ce30e218bc45bfc16.bindPopup(popup_5e6d0aff0d985489acd2afb7fc879b5c)
+        ;
+
+        
+    
+    
+            marker_815ed95d4fa0d15ce30e218bc45bfc16.bindTooltip(
+                `<div>
+                     Granite Terrace
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5b35974fa63d482fa233cd1abfb2f65 = L.marker(
+                [38.753119, -121.285093],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_db2488e38255eebded3df26c0f76e88c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c5b35974fa63d482fa233cd1abfb2f65.setIcon(icon_db2488e38255eebded3df26c0f76e88c);
+        
+    
+        var popup_9df56cf376d4bdc4178421a625aad763 = L.popup({"maxWidth": 350});
+
+        
+            var html_e34a823ea9b5d6d2d5ad2173309ab61a = $(`<div id="html_e34a823ea9b5d6d2d5ad2173309ab61a" style="width: 100.0%; height: 100.0%;"><b>Belvedre</b><br>Builder: NEXTNew<br>Status: Active<br>Address: 1023 Edwina Justus Loop, Roseville, CA 95747<br>Units: 4.0 / 16.0<br>Sales Contact: Mike<br><a href='https://nextnewhomes.com/belvedere-historic-roseville/' target='_blank'>Website</a></div>`)[0];
+            popup_9df56cf376d4bdc4178421a625aad763.setContent(html_e34a823ea9b5d6d2d5ad2173309ab61a);
+        
+
+        marker_c5b35974fa63d482fa233cd1abfb2f65.bindPopup(popup_9df56cf376d4bdc4178421a625aad763)
+        ;
+
+        
+    
+    
+            marker_c5b35974fa63d482fa233cd1abfb2f65.bindTooltip(
+                `<div>
+                     Belvedre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c341daafde7da8d68679aeffcf11d4cf = L.marker(
+                [39.142756, -121.666856],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_c1ed3c978ec1805043dd6e08e010cc9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c341daafde7da8d68679aeffcf11d4cf.setIcon(icon_c1ed3c978ec1805043dd6e08e010cc9d);
+        
+    
+        var popup_fdebdcbc4d63e0de1c0821fd9cdedc58 = L.popup({"maxWidth": 350});
+
+        
+            var html_702742e2fc0746ae5c2058816051c1de = $(`<div id="html_702742e2fc0746ae5c2058816051c1de" style="width: 100.0%; height: 100.0%;"><b>Henson Ranch</b><br>Builder: NEXTNew<br>Status: Active<br>Address: 2740 Ethel Drive, Yuba City, CA 95993<br>Units: 4.0 / 50.0<br>Sales Contact: Angelica<br><a href='https://hensonranch.com/' target='_blank'>Website</a></div>`)[0];
+            popup_fdebdcbc4d63e0de1c0821fd9cdedc58.setContent(html_702742e2fc0746ae5c2058816051c1de);
+        
+
+        marker_c341daafde7da8d68679aeffcf11d4cf.bindPopup(popup_fdebdcbc4d63e0de1c0821fd9cdedc58)
+        ;
+
+        
+    
+    
+            marker_c341daafde7da8d68679aeffcf11d4cf.bindTooltip(
+                `<div>
+                     Henson Ranch
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b3a6930557c38c5f346c3d4bf1d3d09 = L.marker(
+                [38.463398, 121.486418],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_cfced0e50fa69ff7f5d3753eb2264eda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5b3a6930557c38c5f346c3d4bf1d3d09.setIcon(icon_cfced0e50fa69ff7f5d3753eb2264eda);
+        
+    
+        var popup_5dc1e819797e9373e60506324a561bf7 = L.popup({"maxWidth": 350});
+
+        
+            var html_4a137ba311806d5f18c9a7fb94ca5580 = $(`<div id="html_4a137ba311806d5f18c9a7fb94ca5580" style="width: 100.0%; height: 100.0%;"><b>Catlina</b><br>Builder: Signature<br>Status: Active<br>Address: 8163 Capital Delta St, Sacramento, CA 95832<br>Units: 1.0 / 52.0<br>Sales Contact: Josh<br><a href='https://sighomes.com/catalina/' target='_blank'>Website</a></div>`)[0];
+            popup_5dc1e819797e9373e60506324a561bf7.setContent(html_4a137ba311806d5f18c9a7fb94ca5580);
+        
+
+        marker_5b3a6930557c38c5f346c3d4bf1d3d09.bindPopup(popup_5dc1e819797e9373e60506324a561bf7)
+        ;
+
+        
+    
+    
+            marker_5b3a6930557c38c5f346c3d4bf1d3d09.bindTooltip(
+                `<div>
+                     Catlina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f24a86149f01d036a46e34b8c8fa362 = L.marker(
+                [38.463358, -121.486854],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_a304969ec7ccc728fa93866004f67e24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6f24a86149f01d036a46e34b8c8fa362.setIcon(icon_a304969ec7ccc728fa93866004f67e24);
+        
+    
+        var popup_5fe999d5aae93c1a73f50cc8d1f64bd6 = L.popup({"maxWidth": 350});
+
+        
+            var html_237950b732269e2f140cecc0e2828133 = $(`<div id="html_237950b732269e2f140cecc0e2828133" style="width: 100.0%; height: 100.0%;"><b>Coronado</b><br>Builder: Signature<br>Status: Active<br>Address: 8162 Capital Delta St, Sacramento, CA 95832<br>Units: 8.0 / 87.0<br>Sales Contact: Josh<br><a href='https://sighomes.com/coronado/' target='_blank'>Website</a></div>`)[0];
+            popup_5fe999d5aae93c1a73f50cc8d1f64bd6.setContent(html_237950b732269e2f140cecc0e2828133);
+        
+
+        marker_6f24a86149f01d036a46e34b8c8fa362.bindPopup(popup_5fe999d5aae93c1a73f50cc8d1f64bd6)
+        ;
+
+        
+    
+    
+            marker_6f24a86149f01d036a46e34b8c8fa362.bindTooltip(
+                `<div>
+                     Coronado
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c78291b1d8aa8393535167a1b49be770 = L.marker(
+                [38.1341, -121.2722],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_ee021cbcbac3dbe5804421048d3fc518 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c78291b1d8aa8393535167a1b49be770.setIcon(icon_ee021cbcbac3dbe5804421048d3fc518);
+        
+    
+        var popup_f83f39548af8d38673718589433368cc = L.popup({"maxWidth": 350});
+
+        
+            var html_3b844d742ea9be3949b11a8f37d1dbfa = $(`<div id="html_3b844d742ea9be3949b11a8f37d1dbfa" style="width: 100.0%; height: 100.0%;"><b>Lumina</b><br>Builder: Signature<br>Status: Active<br>Address: 2821 Amarone Drive, Lodi, CA 95240<br>Units: 5.0 / 6.0<br>Sales Contact: Josh<br><a href='https://sighomes.com/lumina/' target='_blank'>Website</a></div>`)[0];
+            popup_f83f39548af8d38673718589433368cc.setContent(html_3b844d742ea9be3949b11a8f37d1dbfa);
+        
+
+        marker_c78291b1d8aa8393535167a1b49be770.bindPopup(popup_f83f39548af8d38673718589433368cc)
+        ;
+
+        
+    
+    
+            marker_c78291b1d8aa8393535167a1b49be770.bindTooltip(
+                `<div>
+                     Lumina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3fea12e4e7bd8c07423186b09267195a = L.marker(
+                [38.459969, 121.484544],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_72ea8586ba15c7e152c5a2fa2f718cc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3fea12e4e7bd8c07423186b09267195a.setIcon(icon_72ea8586ba15c7e152c5a2fa2f718cc3);
+        
+    
+        var popup_79022b9a0920012de7e8c2ab6c764fb7 = L.popup({"maxWidth": 350});
+
+        
+            var html_f8ecb987bbabecac22656b272eab6d5d = $(`<div id="html_f8ecb987bbabecac22656b272eab6d5d" style="width: 100.0%; height: 100.0%;"><b>Balboa</b><br>Builder: Signature<br>Status: Coming<br>Address: 2421 Harborview, Sacramento, CA 95832<br>Sales Contact: Josh<br><a href='https://sighomes.com/balboa/' target='_blank'>Website</a></div>`)[0];
+            popup_79022b9a0920012de7e8c2ab6c764fb7.setContent(html_f8ecb987bbabecac22656b272eab6d5d);
+        
+
+        marker_3fea12e4e7bd8c07423186b09267195a.bindPopup(popup_79022b9a0920012de7e8c2ab6c764fb7)
+        ;
+
+        
+    
+    
+            marker_3fea12e4e7bd8c07423186b09267195a.bindTooltip(
+                `<div>
+                     Balboa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a62b0cc1d721e5e037b4a44bb385929 = L.marker(
+                [37.806567, -121.353609],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_3134284924ed0121fb55b43f3154d733 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3a62b0cc1d721e5e037b4a44bb385929.setIcon(icon_3134284924ed0121fb55b43f3154d733);
+        
+    
+        var popup_b39c2238d216615969d5e792dea5f608 = L.popup({"maxWidth": 350});
+
+        
+            var html_ad3d1d1d7ebb7dd46af8093fd21989a2 = $(`<div id="html_ad3d1d1d7ebb7dd46af8093fd21989a2" style="width: 100.0%; height: 100.0%;"><b>Clearwater</b><br>Builder: Signature<br>Status: Active<br>Address: 3726 Darnoch, Lathrop, CA 95330<br>Units: 0.0 / 50.0<br>Sales Contact: Josh<br><a href='https://sighomes.com/clearwater/' target='_blank'>Website</a></div>`)[0];
+            popup_b39c2238d216615969d5e792dea5f608.setContent(html_ad3d1d1d7ebb7dd46af8093fd21989a2);
+        
+
+        marker_3a62b0cc1d721e5e037b4a44bb385929.bindPopup(popup_b39c2238d216615969d5e792dea5f608)
+        ;
+
+        
+    
+    
+            marker_3a62b0cc1d721e5e037b4a44bb385929.bindTooltip(
+                `<div>
+                     Clearwater
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_939ccaa78d104f8f0b51791c87321af9 = L.marker(
+                [37.812989, -121.368686],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_4ba9ff3d361aa4dd34eab16bb3445724 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_939ccaa78d104f8f0b51791c87321af9.setIcon(icon_4ba9ff3d361aa4dd34eab16bb3445724);
+        
+    
+        var popup_6ade3a7688170f788a160f5320eb75cd = L.popup({"maxWidth": 350});
+
+        
+            var html_fa291367e17a5760aa15f21dd860b7ce = $(`<div id="html_fa291367e17a5760aa15f21dd860b7ce" style="width: 100.0%; height: 100.0%;"><b>Enclave</b><br>Builder: Signature<br>Status: Coming<br>Address: 3725 Darnoch, Lathrop, CA 95330<br>Sales Contact: Josh<br><a href='https://sighomes.com/get-connected/' target='_blank'>Website</a></div>`)[0];
+            popup_6ade3a7688170f788a160f5320eb75cd.setContent(html_fa291367e17a5760aa15f21dd860b7ce);
+        
+
+        marker_939ccaa78d104f8f0b51791c87321af9.bindPopup(popup_6ade3a7688170f788a160f5320eb75cd)
+        ;
+
+        
+    
+    
+            marker_939ccaa78d104f8f0b51791c87321af9.bindTooltip(
+                `<div>
+                     Enclave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d267cb22a55e8892eaa16adfde5b9ecf = L.marker(
+                [38.735718, -121.173978],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_37a2609bf376455140e9072be695cfbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d267cb22a55e8892eaa16adfde5b9ecf.setIcon(icon_37a2609bf376455140e9072be695cfbb);
+        
+    
+        var popup_68be1a97e699e3c5780435cb1e78d538 = L.popup({"maxWidth": 350});
+
+        
+            var html_89d356d334c605229ac7cb71b653160d = $(`<div id="html_89d356d334c605229ac7cb71b653160d" style="width: 100.0%; height: 100.0%;"><b>The Glen</b><br>Builder: Blue Mountain<br>Status: Active<br>Address: 9001 Ventura Street, Granite Bay, CA 95746<br>Units: 5.0 / 15.0<br>Sales Contact: Sydney<br><a href='https://bluemountaincommunities.com/communities/the-glen-granite-bay/' target='_blank'>Website</a></div>`)[0];
+            popup_68be1a97e699e3c5780435cb1e78d538.setContent(html_89d356d334c605229ac7cb71b653160d);
+        
+
+        marker_d267cb22a55e8892eaa16adfde5b9ecf.bindPopup(popup_68be1a97e699e3c5780435cb1e78d538)
+        ;
+
+        
+    
+    
+            marker_d267cb22a55e8892eaa16adfde5b9ecf.bindTooltip(
+                `<div>
+                     The Glen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c36f7c0c3a91979df097da29ddbeac48 = L.marker(
+                [38.694905, -121.018295],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_aaef4767d9ab10ad745924fb350d66f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c36f7c0c3a91979df097da29ddbeac48.setIcon(icon_aaef4767d9ab10ad745924fb350d66f8);
+        
+    
+        var popup_e16f61091fdc77af1f30a0ddb87c97b9 = L.popup({"maxWidth": 350});
+
+        
+            var html_9c6bfc51685b4d1244a202c78e4ec0b4 = $(`<div id="html_9c6bfc51685b4d1244a202c78e4ec0b4" style="width: 100.0%; height: 100.0%;"><b>Revere</b><br>Builder: Blue Mountain<br>Status: Active<br>Address: 3309 Foxmoore, Rescue, CA 95762<br>Units: 1.0 / 1.0<br>Sales Contact: Rachel<br><a href='https://bluemountaincommunities.com/communities/revere-silver-springs/' target='_blank'>Website</a></div>`)[0];
+            popup_e16f61091fdc77af1f30a0ddb87c97b9.setContent(html_9c6bfc51685b4d1244a202c78e4ec0b4);
+        
+
+        marker_c36f7c0c3a91979df097da29ddbeac48.bindPopup(popup_e16f61091fdc77af1f30a0ddb87c97b9)
+        ;
+
+        
+    
+    
+            marker_c36f7c0c3a91979df097da29ddbeac48.bindTooltip(
+                `<div>
+                     Revere
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3ced250608daf5523cb232696e40052 = L.marker(
+                [38.017296, -121.629444],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_86e62f3585bf6494a2196d18bcb38d63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a3ced250608daf5523cb232696e40052.setIcon(icon_86e62f3585bf6494a2196d18bcb38d63);
+        
+    
+        var popup_41c3d70b53304782ce16ff61a46d88a9 = L.popup({"maxWidth": 350});
+
+        
+            var html_4a5234eb258a5343889c6203adebc3db = $(`<div id="html_4a5234eb258a5343889c6203adebc3db" style="width: 100.0%; height: 100.0%;"><b>Delta Coves</b><br>Builder: Blue Mountain<br>Status: Active<br>Address: 20 Seaward Court, Bethel Island, CA 94511<br>Units: 9.0 / 100.0<br>Sales Contact: Kaylee<br><a href='https://bluemountaincommunities.com/communities/delta-coves/' target='_blank'>Website</a></div>`)[0];
+            popup_41c3d70b53304782ce16ff61a46d88a9.setContent(html_4a5234eb258a5343889c6203adebc3db);
+        
+
+        marker_a3ced250608daf5523cb232696e40052.bindPopup(popup_41c3d70b53304782ce16ff61a46d88a9)
+        ;
+
+        
+    
+    
+            marker_a3ced250608daf5523cb232696e40052.bindTooltip(
+                `<div>
+                     Delta Coves
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a9416c44b11814a460d475878a3cbe2 = L.marker(
+                [38.701238, -121.021776],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_bdc095245e1f11305ec907dd89c70886 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5a9416c44b11814a460d475878a3cbe2.setIcon(icon_bdc095245e1f11305ec907dd89c70886);
+        
+    
+        var popup_a885de3b56d6a9808a4c73f40fda2250 = L.popup({"maxWidth": 350});
+
+        
+            var html_0a72caae9fedfc3126974a2d7a9b67af = $(`<div id="html_0a72caae9fedfc3126974a2d7a9b67af" style="width: 100.0%; height: 100.0%;"><b>Oak Haven</b><br>Builder: Blue Mountain<br>Status: Active<br>Address: 4989 Silverleaf Drive, Rescue, CA 95672<br>Units: 5.0 / 18.0<br>Sales Contact: Rachel<br><a href='https://bluemountaincommunities.com/communities/oakhaven-in-rescue/' target='_blank'>Website</a></div>`)[0];
+            popup_a885de3b56d6a9808a4c73f40fda2250.setContent(html_0a72caae9fedfc3126974a2d7a9b67af);
+        
+
+        marker_5a9416c44b11814a460d475878a3cbe2.bindPopup(popup_a885de3b56d6a9808a4c73f40fda2250)
+        ;
+
+        
+    
+    
+            marker_5a9416c44b11814a460d475878a3cbe2.bindTooltip(
+                `<div>
+                     Oak Haven
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b0a12a4e539c700aad5f8a5c7fea3f4 = L.marker(
+                [38.277786, -121.294678],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_ea02af899e0518adbb0ede8c98fb6aa8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7b0a12a4e539c700aad5f8a5c7fea3f4.setIcon(icon_ea02af899e0518adbb0ede8c98fb6aa8);
+        
+    
+        var popup_3c184c91a41b3827b8a68b2cbe5b1c85 = L.popup({"maxWidth": 350});
+
+        
+            var html_0e553b05741c86a83befe91cc998058c = $(`<div id="html_0e553b05741c86a83befe91cc998058c" style="width: 100.0%; height: 100.0%;"><b>Parlin Oaks</b><br>Builder: Blue Mountain<br>Status: Active<br>Address: 960 Katsura Street, Galt, CA 95632<br>Units: 6.0 / 126.0<br>Sales Contact: Claudia<br><a href='https://bluemountaincommunities.com/communities/parlin-oaks-in-galt/' target='_blank'>Website</a></div>`)[0];
+            popup_3c184c91a41b3827b8a68b2cbe5b1c85.setContent(html_0e553b05741c86a83befe91cc998058c);
+        
+
+        marker_7b0a12a4e539c700aad5f8a5c7fea3f4.bindPopup(popup_3c184c91a41b3827b8a68b2cbe5b1c85)
+        ;
+
+        
+    
+    
+            marker_7b0a12a4e539c700aad5f8a5c7fea3f4.bindTooltip(
+                `<div>
+                     Parlin Oaks
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26b867d3e3283c1fa4b8dd625226d174 = L.marker(
+                [38.63751, -121.311224],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_0c89eae0312d4abb86fa6ee41860833d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_26b867d3e3283c1fa4b8dd625226d174.setIcon(icon_0c89eae0312d4abb86fa6ee41860833d);
+        
+    
+        var popup_d7cc90ef8c37b053bbbc5ba3d625b473 = L.popup({"maxWidth": 350});
+
+        
+            var html_dd2c4995d222f99fc7f6254fd023041b = $(`<div id="html_dd2c4995d222f99fc7f6254fd023041b" style="width: 100.0%; height: 100.0%;"><b>The Paseos</b><br>Builder: Homes by Towne<br>Status: Active<br>Address: 4106 Porton Lane, Carmichael, CA 95608<br>Units: 9.0 / 29.0<br>Sales Contact: Laura Popehttps://homesbytowne.com/california/the-paseos-at-carmichael/</div>`)[0];
+            popup_d7cc90ef8c37b053bbbc5ba3d625b473.setContent(html_dd2c4995d222f99fc7f6254fd023041b);
+        
+
+        marker_26b867d3e3283c1fa4b8dd625226d174.bindPopup(popup_d7cc90ef8c37b053bbbc5ba3d625b473)
+        ;
+
+        
+    
+    
+            marker_26b867d3e3283c1fa4b8dd625226d174.bindTooltip(
+                `<div>
+                     The Paseos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b08aa5ba88fb11e6d1453b4517cb291e = L.marker(
+                [37.606512, -120.879923],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_f47f6f8fec510e97cfa491abe42eaa2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b08aa5ba88fb11e6d1453b4517cb291e.setIcon(icon_f47f6f8fec510e97cfa491abe42eaa2d);
+        
+    
+        var popup_20da7399d5b2522ecb8743ffa77a87f9 = L.popup({"maxWidth": 350});
+
+        
+            var html_e9c7d6d3ded53a7cbe3e0eecf6d635b5 = $(`<div id="html_e9c7d6d3ded53a7cbe3e0eecf6d635b5" style="width: 100.0%; height: 100.0%;"><b>Orchards at Parkwoodf</b><br>Builder: KB Homes<br>Status: Active<br>Address: 1713 Apiary Way, Hughson, CA 95326<br>Units: 10.0 / 228.0<br>Sales Contact: Jason <br><a href='https://www.kbhome.com/new-homes-central-valley/heritage-at-parkwood' target='_blank'>Website</a></div>`)[0];
+            popup_20da7399d5b2522ecb8743ffa77a87f9.setContent(html_e9c7d6d3ded53a7cbe3e0eecf6d635b5);
+        
+
+        marker_b08aa5ba88fb11e6d1453b4517cb291e.bindPopup(popup_20da7399d5b2522ecb8743ffa77a87f9)
+        ;
+
+        
+    
+    
+            marker_b08aa5ba88fb11e6d1453b4517cb291e.bindTooltip(
+                `<div>
+                     Orchards at Parkwoodf
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e8b923be806f5370a30c9a2732bdb3d = L.marker(
+                [37.690668, -120.949642],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_cdbd04f4a37a216f2a9fda9a4e08aa56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3e8b923be806f5370a30c9a2732bdb3d.setIcon(icon_cdbd04f4a37a216f2a9fda9a4e08aa56);
+        
+    
+        var popup_3e693fb0d592f3dcc754c955cbcb4ff8 = L.popup({"maxWidth": 350});
+
+        
+            var html_31837cff35ace00dc0f269976ee907b4 = $(`<div id="html_31837cff35ace00dc0f269976ee907b4" style="width: 100.0%; height: 100.0%;"><b>Autumn at Tivoli</b><br>Builder: KB Homes<br>Status: Active<br>Address: 2625 Salvatore Way, Modesto, CA 95357<br>Sales Contact: nan<br><a href='https://www.kbhome.com/new-homes-central-valley/autumnwood-at-tivoli' target='_blank'>Website</a></div>`)[0];
+            popup_3e693fb0d592f3dcc754c955cbcb4ff8.setContent(html_31837cff35ace00dc0f269976ee907b4);
+        
+
+        marker_3e8b923be806f5370a30c9a2732bdb3d.bindPopup(popup_3e693fb0d592f3dcc754c955cbcb4ff8)
+        ;
+
+        
+    
+    
+            marker_3e8b923be806f5370a30c9a2732bdb3d.bindTooltip(
+                `<div>
+                     Autumn at Tivoli
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b213d22e23fd9019833943abec2169e7 = L.marker(
+                [37.691026, -120.948602],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_63e80aa815821afece44b94fd8a6ac2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b213d22e23fd9019833943abec2169e7.setIcon(icon_63e80aa815821afece44b94fd8a6ac2e);
+        
+    
+        var popup_70d28886b04ee5a41ebf6701724a8692 = L.popup({"maxWidth": 350});
+
+        
+            var html_5a971d1eea1ef3434b8defb45cf0da0b = $(`<div id="html_5a971d1eea1ef3434b8defb45cf0da0b" style="width: 100.0%; height: 100.0%;"><b>Summerfield at Tivoli</b><br>Builder: KB Homes<br>Status: Active<br>Address: 2612 Pintail Drake Lane, Modesto, CA 95357<br>Sales Contact: nan<br><a href='https://www.kbhome.com/new-homes-central-valley/summerfield-at-tivoli' target='_blank'>Website</a></div>`)[0];
+            popup_70d28886b04ee5a41ebf6701724a8692.setContent(html_5a971d1eea1ef3434b8defb45cf0da0b);
+        
+
+        marker_b213d22e23fd9019833943abec2169e7.bindPopup(popup_70d28886b04ee5a41ebf6701724a8692)
+        ;
+
+        
+    
+    
+            marker_b213d22e23fd9019833943abec2169e7.bindTooltip(
+                `<div>
+                     Summerfield at Tivoli
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae8c2400bee457d4f59b427e352eb9d6 = L.marker(
+                [37.69072, -120.948347],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_f65b4443aad8a8a231b3c55a3ac39746 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ae8c2400bee457d4f59b427e352eb9d6.setIcon(icon_f65b4443aad8a8a231b3c55a3ac39746);
+        
+    
+        var popup_41944543ac02e61a948fc6b8c773af1b = L.popup({"maxWidth": 350});
+
+        
+            var html_ccc31c9a82100f55d2e09f6d58f482a7 = $(`<div id="html_ccc31c9a82100f55d2e09f6d58f482a7" style="width: 100.0%; height: 100.0%;"><b>Hayden at Tivoloi</b><br>Builder: KB Homes<br>Status: Active<br>Address: 2605 Pintail Drake Lane, Modesto, CA 95357<br>Sales Contact: nan</div>`)[0];
+            popup_41944543ac02e61a948fc6b8c773af1b.setContent(html_ccc31c9a82100f55d2e09f6d58f482a7);
+        
+
+        marker_ae8c2400bee457d4f59b427e352eb9d6.bindPopup(popup_41944543ac02e61a948fc6b8c773af1b)
+        ;
+
+        
+    
+    
+            marker_ae8c2400bee457d4f59b427e352eb9d6.bindTooltip(
+                `<div>
+                     Hayden at Tivoloi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efa9a3494a66bd5be40cfce0d3a11226 = L.marker(
+                [38.723058, -121.347307],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_25efe415c848f6f605744543820390a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_efa9a3494a66bd5be40cfce0d3a11226.setIcon(icon_25efe415c848f6f605744543820390a4);
+        
+    
+        var popup_2aa61c5ddc5024f85f92b815c2ad17d6 = L.popup({"maxWidth": 350});
+
+        
+            var html_01ba4c955378d55aeec07b4a4b729935 = $(`<div id="html_01ba4c955378d55aeec07b4a4b729935" style="width: 100.0%; height: 100.0%;"><b>Villas at the Preserve</b><br>Builder: KB Homes<br>Status: Active<br>Address: 3308 Misty Lake Drive, Antelope, CA 95843<br>Sales Contact: Liz<br><a href='https://www.kbhome.com/new-homes-sacramento/villas-at-the-preserve' target='_blank'>Website</a></div>`)[0];
+            popup_2aa61c5ddc5024f85f92b815c2ad17d6.setContent(html_01ba4c955378d55aeec07b4a4b729935);
+        
+
+        marker_efa9a3494a66bd5be40cfce0d3a11226.bindPopup(popup_2aa61c5ddc5024f85f92b815c2ad17d6)
+        ;
+
+        
+    
+    
+            marker_efa9a3494a66bd5be40cfce0d3a11226.bindTooltip(
+                `<div>
+                     Villas at the Preserve
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49cc9f6a70f6a5f591ea541c9b00f76d = L.marker(
+                [38.859964, -121.293108],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_115362caf52f3466a2a293d7544250b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_49cc9f6a70f6a5f591ea541c9b00f76d.setIcon(icon_115362caf52f3466a2a293d7544250b2);
+        
+    
+        var popup_f95f7cb751580505a4a3490953ab6d9e = L.popup({"maxWidth": 350});
+
+        
+            var html_3379ca56df6d8ea40d264375b0ad7d61 = $(`<div id="html_3379ca56df6d8ea40d264375b0ad7d61" style="width: 100.0%; height: 100.0%;"><b>Aurora Heights at Twelve Bridges</b><br>Builder: KB Homes<br>Status: Active<br>Address: 2310 Starlight Lane, Lincoln, CA 95648<br>Sales Contact: Valorie<br><a href='https://www.kbhome.com/new-homes-sacramento/aurora-heights-at-twelve-bridges/plan-1373' target='_blank'>Website</a></div>`)[0];
+            popup_f95f7cb751580505a4a3490953ab6d9e.setContent(html_3379ca56df6d8ea40d264375b0ad7d61);
+        
+
+        marker_49cc9f6a70f6a5f591ea541c9b00f76d.bindPopup(popup_f95f7cb751580505a4a3490953ab6d9e)
+        ;
+
+        
+    
+    
+            marker_49cc9f6a70f6a5f591ea541c9b00f76d.bindTooltip(
+                `<div>
+                     Aurora Heights at Twelve Bridges
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d76882284eef03eefb9fc4e44f0244e = L.marker(
+                [38.744042, -121.169558],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_b1ff8409b4b00429b2c7b9d1aca564a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3d76882284eef03eefb9fc4e44f0244e.setIcon(icon_b1ff8409b4b00429b2c7b9d1aca564a7);
+        
+    
+        var popup_30702c1754b8010f6116fcf1c5428a24 = L.popup({"maxWidth": 350});
+
+        
+            var html_f4ce6d3606b030623a65d187da8ae788 = $(`<div id="html_f4ce6d3606b030623a65d187da8ae788" style="width: 100.0%; height: 100.0%;"><b>Soleil</b><br>Builder: Premier Homes<br>Status: Active<br>Address: 7115 Soliel Way, Granite Bay, CA 95746<br>Sales Contact: nan</div>`)[0];
+            popup_30702c1754b8010f6116fcf1c5428a24.setContent(html_f4ce6d3606b030623a65d187da8ae788);
+        
+
+        marker_3d76882284eef03eefb9fc4e44f0244e.bindPopup(popup_30702c1754b8010f6116fcf1c5428a24)
+        ;
+
+        
+    
+    
+            marker_3d76882284eef03eefb9fc4e44f0244e.bindTooltip(
+                `<div>
+                     Soleil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09afbe37b4871f841d9bc12fdbd78b90 = L.marker(
+                [38.489768, -121.075564],
+                {}
+            ).addTo(marker_cluster_f4700e1b9a93f3c5ba6ee62737df1c5b);
+        
+    
+            var icon_ceb082778ff9d1c4d5381fbe1f619b1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_09afbe37b4871f841d9bc12fdbd78b90.setIcon(icon_ceb082778ff9d1c4d5381fbe1f619b1d);
+        
+    
+        var popup_4cd3d48d355e5b93f925027633167240 = L.popup({"maxWidth": 350});
+
+        
+            var html_ab1fb20d64ac28c09c6a0515a6b38937 = $(`<div id="html_ab1fb20d64ac28c09c6a0515a6b38937" style="width: 100.0%; height: 100.0%;"><b>Riverview</b><br>Builder: Reynen And Bardis<br>Status: Active<br>Address: 15351 Sqaq St. E, Rancho Murieta, CA 95683<br>Sales Contact: nan</div>`)[0];
+            popup_4cd3d48d355e5b93f925027633167240.setContent(html_ab1fb20d64ac28c09c6a0515a6b38937);
+        
+
+        marker_09afbe37b4871f841d9bc12fdbd78b90.bindPopup(popup_4cd3d48d355e5b93f925027633167240)
+        ;
+
+        
+    
+    
+            marker_09afbe37b4871f841d9bc12fdbd78b90.bindTooltip(
+                `<div>
+                     Riverview
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_ea7d7fe526feb406c9ae7cab5e538788.fitBounds(
+                [[38.637112, -121.469999], [38.790861, -121.225684], [38.753119, -121.285093], [39.142756, -121.666856], [38.463398, 121.486418], [38.463358, -121.486854], [38.1341, -121.2722], [38.459969, 121.484544], [37.806567, -121.353609], [37.812989, -121.368686], [38.735718, -121.173978], [38.694905, -121.018295], [38.017296, -121.629444], [38.701238, -121.021776], [38.277786, -121.294678], [38.63751, -121.311224], [37.606512, -120.879923], [37.690668, -120.949642], [37.691026, -120.948602], [37.69072, -120.948347], [38.723058, -121.347307], [38.859964, -121.293108], [38.744042, -121.169558], [38.489768, -121.075564]],
+                {"padding": [30, 30]}
+            );
+        
+</script>
+</html>
